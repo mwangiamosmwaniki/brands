@@ -191,7 +191,7 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({
                 isLight ? 'text-[#081c2d]' : 'text-[#f5f7fa]'
               }`}
             >
-              What we do
+              What ShelterBrand does
             </h2>
           </div>
 
@@ -201,7 +201,7 @@ export const WhatWeDo: React.FC<WhatWeDoProps> = ({
                 isLight ? 'text-[#081c2d]/70' : 'text-[#9aa3a8]/90'
               }`}
             >
-              Branded merchandise your clients keep, large-format outdoor display, apparel branded with the right process, everyday digital printing, custom signage, and archival packaging—all under one roof.
+              ShelterBrand provides corporate branding, office branding, vehicle branding, signage, graphic design and print production for businesses in Nairobi and across Kenya. We handle the design, production and installation side of physical brand experiences, so the final result works in real spaces, on real products and in real customer journeys.
             </p>
             <div className="text-[11px] font-mono text-[#1f7a63] font-medium">
               11 In-House Disciplines · In-House Prepress & Production

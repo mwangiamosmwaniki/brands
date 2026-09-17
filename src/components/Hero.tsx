@@ -248,26 +248,27 @@ export const Hero: React.FC = () => {
 
             {/* Kinetic Cycling Editorial Headline */}
             <h1 className="font-serif text-[34px] sm:text-[46px] lg:text-[54px] leading-[1.06] tracking-tight mb-4 sm:mb-5 text-[#081c2d]">
-              We build brands <br />
-              <span className="block min-h-[1.25em] pt-0.5">
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={headlineIndex}
-                    initial={{ y: 16, opacity: 0, filter: 'blur(3px)' }}
-                    animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
-                    exit={{ y: -16, opacity: 0, filter: 'blur(3px)' }}
-                    transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                    className="block italic text-[#1f7a63] drop-shadow-sm pb-1"
-                  >
-                    {HERO_HEADLINE_PHRASES[headlineIndex]}
-                  </motion.span>
-                </AnimatePresence>
-              </span>
+              Branding &amp; Print Production in Nairobi
             </h1>
+
+            <div className="min-h-[1.25em] pt-0.5 mb-4">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={headlineIndex}
+                  initial={{ y: 16, opacity: 0, filter: 'blur(3px)' }}
+                  animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
+                  exit={{ y: -16, opacity: 0, filter: 'blur(3px)' }}
+                  transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+                  className="block italic text-[#1f7a63] drop-shadow-sm pb-1 text-[24px] sm:text-[30px] lg:text-[36px]"
+                >
+                  {HERO_HEADLINE_PHRASES[headlineIndex]}
+                </motion.span>
+              </AnimatePresence>
+            </div>
 
             {/* Paragraph copy */}
             <p className="text-[13px] sm:text-[14px] leading-relaxed text-[#081c2d]/80 mb-6 sm:mb-7 max-w-[380px]">
-              ShelterBrand is a Nairobi creative studio shaping bold identities, tactile printcraft, and tangible brand experiences for ambitious businesses.
+              ShelterBrand helps businesses build corporate branding, office branding, vehicle branding, signage, graphic design and print production systems that are consistent, durable and built for real-world use in Nairobi and across Kenya.
             </p>
 
             {/* CTA Buttons */}

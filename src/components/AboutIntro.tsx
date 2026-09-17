@@ -31,12 +31,12 @@ export const AboutIntro: React.FC = () => {
 
             {/* Editorial Headline */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif letter-tight text-[#081c2d] leading-[1.08] mb-5">
-              A creative studio shaping bold identities and tangible brand experiences.
+              Branding and print production for Nairobi businesses.
             </h2>
 
             {/* Body Copy */}
             <p className="text-xs sm:text-sm text-[#081c2d]/75 leading-relaxed font-sans mb-8 max-w-2xl">
-              We believe great brands aren’t just seen on screens—they are felt in everyday life. From our integrated design studio and production workshop in Westlands, Nairobi, we combine thoughtful brand strategy with hands-on craftsmanship. We help ambitious companies create distinct identities, branded merchandise, packaging, and large-format displays that connect warmly with audiences.
+              ShelterBrand is a branding and print production company in Nairobi, Kenya. We help businesses strengthen their visual identity through corporate branding, office branding, signage, vehicle branding, graphic design and printed marketing materials. From design to production and installation, we create brand systems that are consistent, practical and built to be seen in real spaces.
             </p>
 
             {/* Direct Link to Full About Page */}
