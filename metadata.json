@@ -1,0 +1,6 @@
+{
+  "name": "ShelterBrand",
+  "description": "A Nairobi creative studio shaping bold identities, powerful visuals, and tangible brand experiences for ambitious businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Georgia", "Instrument Serif", serif;
+  --font-serif: "Georgia", "Instrument Serif", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  /* 4 Brand Colors:
+     Navy Blue: #081c2d
+     Emerald Green: #1f7a63
+     Soft White: #f5f7fa
+     Cool Gray: #9aa3a8
+  */
+  --color-navy: #081c2d;
+  --color-emerald: #1f7a63;
+  --color-soft-white: #f5f7fa;
+  --color-cool-gray: #9aa3a8;
+
+  /* Theme mappings for existing tokens */
+  --color-ivory: #f5f7fa;
+  --color-charcoal: #081c2d;
+  --color-terracotta: #1f7a63;
+  --color-terracotta-dark: #165b4a;
+  --color-muted-orange: #1f7a63;
+  --color-sand: #9aa3a8;
+  --color-sand-light: #f5f7fa;
+  --color-warm-card: #f5f7fa;
+}
+
+:root {
+  --bg: #f5f7fa;
+  --ink: #081c2d;
+  --accent: #1f7a63;
+  --gray: #9aa3a8;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #f5f7fa;
+    color: #081c2d;
+    overflow-x: hidden;
+  }
+
+  .font-serif {
+    font-family: 'Georgia', 'Instrument Serif', serif;
+  }
+
+  .letter-tight {
+    letter-spacing: -0.04em;
+  }
+}
+
+/* Editorial Theme Utility Classes */
+.nav-blur {
+  background: rgba(245, 247, 250, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(8, 28, 45, 0.1);
+  box-shadow: 0 4px 24px -2px rgba(8, 28, 45, 0.08), 0 2px 6px -1px rgba(8, 28, 45, 0.04);
+}
+
+.nav-blur-dark {
+  background: rgba(8, 28, 45, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(245, 247, 250, 0.12);
+  box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #081c2d 0%, #0d273d 100%);
+  position: relative;
+}
+
+.hero-pattern {
+  opacity: 0.12;
+  background-image: radial-gradient(#f5f7fa 0.5px, transparent 0.5px);
+  background-size: 10px 10px;
+}
+
+/* Custom subtle noise texture */
+.bg-grain {
+  background-image: radial-gradient(rgba(8, 28, 45, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom tactile print borders */
+.border-tactile {
+  border-color: rgba(8, 28, 45, 0.1);
+}
+
+/* Hide scrollbar for clean horizontal scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Marquee Animation Utilities */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee 36s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
