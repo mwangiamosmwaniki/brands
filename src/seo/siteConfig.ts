@@ -46,6 +46,12 @@ export const routeMeta: Record<string, { title: string; description: string; typ
       'View ShelterBrand portfolio projects spanning office branding, vehicle branding, signage, packaging, print production and corporate identity work for businesses across Kenya.',
     type: 'website',
   },
+  '/process': {
+    title: 'Branding Process | From Design to Print Production | ShelterBrand',
+    description:
+      'See how ShelterBrand takes branding projects from consultation and design through proofing, production, installation and final delivery in Nairobi.',
+    type: 'website',
+  },
   '/contact': {
     title: 'Contact ShelterBrand | Branding & Print Quote in Nairobi',
     description:

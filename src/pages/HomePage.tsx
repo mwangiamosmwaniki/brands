@@ -35,6 +35,21 @@ export const HomePage: React.FC = () => {
         'ShelterBrand is based in Nairobi and works with businesses across Kenya, as well as clients needing consistent branded environments or print work across East Africa.',
     },
     {
+      question: 'What types of businesses does ShelterBrand work with?',
+      answer:
+        'ShelterBrand works with offices, retail businesses, healthcare providers, hospitality brands, logistics companies, startups, institutions and commercial organizations that need consistent physical branding and printed materials.',
+    },
+    {
+      question: 'What types of signage and physical branding does ShelterBrand provide?',
+      answer:
+        'We provide office branding, wall graphics, glass branding, reception signage, wayfinding systems, lightboxes, vehicle graphics and branded environmental graphics for commercial spaces.',
+    },
+    {
+      question: 'Does ShelterBrand provide branding services outside Nairobi?',
+      answer:
+        'Yes. ShelterBrand is based in Nairobi and works with businesses across Kenya, supporting client projects that require office branding, vehicle graphics, signage and print production beyond the city limits.',
+    },
+    {
       question: 'How can I request a quote?',
       answer:
         'You can contact ShelterBrand through the website contact form or WhatsApp to discuss your branding, signage, print or production requirement.',

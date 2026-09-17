@@ -460,27 +460,24 @@ export const PROJECTS: Project[] = [
     image: TRUST_IMAGE,
     aspectRatio: 'aspect-[4/5]',
     description:
-      'A bold, geometric visual identity for a Nairobi-based financial services firm, combining a modernist typographic system with a warm, approachable color palette.',
-    disciplines: ['Brand Strategy', 'Custom Lettering', 'Eco-Pouch Packaging', 'Letterpress Menu Systems'],
-    printSpecifications: [
-      'Office Branding & Signage',
-    ],
-    impact: 'Expanded into 18 regional boutique retailers; +140% direct-to-consumer subscriber surge in 6 months.',
+      'A modern visual identity and branded document system for a Nairobi-based financial services business, designed to feel credible, approachable and easy to recognize across client touchpoints.',
+    disciplines: ['Brand Strategy', 'Office Branding', 'Print Collateral', 'Client Communications'],
+    printSpecifications: ['Business stationery', 'Office signage', 'Marketing collateral'],
+    impact: 'Created a clearer, more consistent brand presence across office-facing and client-facing materials.',
   },
   {
     id: 'NextGen-Solutions',
     title: 'NextGen Solutions',
-    client: 'NextGen solutions Ltd.',
-    category: 'Exhibition & Trade Show',
+    client: 'NextGen Solutions Ltd.',
+    category: 'Exhibition & Events',
     year: '2024',
     image: EXPO_IMAGE,
     aspectRatio: 'aspect-[1/1]',
     description:
-      'A dynamic exhibition booth and trade show display for a Nairobi-based technology solutions provider, featuring modular components, interactive digital screens, and sustainable materials.',
-    disciplines: ['Structural Design', 'Label Engineering', 'Material Sourcing', 'Retail Display Trays'],
-    printSpecifications: [
-    ],
-    impact: 'Increased booth traffic by 75% during the trade show; generated 200+ qualified leads and secured 5 new partnerships within the first month post-event.',
+      'A modular exhibition stand and event graphics system built to present a technology brand clearly in a busy trade-show environment while staying practical to transport and install.',
+    disciplines: ['Exhibition Design', 'Graphic Systems', 'Display Fabrication', 'Event Branding'],
+    printSpecifications: ['Exhibition graphics', 'Wayfinding', 'Backdrop and display panels'],
+    impact: 'Helped present a stronger, more polished booth experience for a business attending a high-traffic commercial event.',
   },
   {
     id: 'Wellcare-hospital',
@@ -488,14 +485,13 @@ export const PROJECTS: Project[] = [
     client: 'Wellcare Medical Center',
     category: 'Branding & Signage',
     year: '2025',
-      image: HOSPITALITY_IMAGE,
+    image: HOSPITALITY_IMAGE,
     aspectRatio: 'aspect-[16/10]',
     description:
-      'A comprehensive branding and wayfinding system for a multi-specialty hospital, integrating patient-centric signage, staff uniforms, and environmental graphics to enhance navigation and patient experience.',
-    disciplines: ['Environmental Graphics', 'Wayfinding Signage', 'Staff Uniforms', 'Patient Information Systems'],
-    printSpecifications: [
-    ],
-    impact: 'Reduced patient navigation complaints by 65% within the first quarter post-launch; improved staff identification and workflow efficiency.',
+      'A healthcare branding and wayfinding system designed to make hospital spaces easier to navigate while reinforcing trust, calm and professionalism at the point of care.',
+    disciplines: ['Environmental Graphics', 'Wayfinding Signage', 'Healthcare Branding', 'Patient Experience'],
+    printSpecifications: ['Reception signage', 'Directional systems', 'Clinical environment graphics'],
+    impact: 'Improved the clarity of visitor navigation and supported a more consistent branded environment across patient-facing spaces.',
   },
   {
     id: 'velora-lifestyle',
@@ -506,11 +502,10 @@ export const PROJECTS: Project[] = [
     image: WORK_PROMO_IMAGE,
     aspectRatio: 'aspect-[4/5]',
     description:
-      'A vibrant brand identity and packaging suite for a lifestyle and wellness company, emphasizing natural elements, holistic wellness, and premium product presentation.',
-    disciplines: ['Visual System', 'Fleet Wrap System', 'Employee Uniforms', 'Executive Stationery'],
-    printSpecifications: [
-    ],
-    impact: 'Achieved a 50% increase in brand recognition and customer engagement within the first six months of launch; secured distribution in 10+ high-end retail outlets.',
+      'A lifestyle brand system and product packaging direction built around a warm, premium aesthetic that could work across retail shelves, digital content and in-store presentation.',
+    disciplines: ['Visual Identity', 'Packaging Design', 'Retail Touchpoints', 'Brand Systems'],
+    printSpecifications: ['Retail packaging', 'Product labels', 'Brand collateral'],
+    impact: 'Supported a more premium and recognizable presentation for a wellness brand across retail and customer touchpoints.',
   },
   {
     id: 'moja-creative',
@@ -521,11 +516,10 @@ export const PROJECTS: Project[] = [
     image: OFFICE_BRANDING_IMAGE,
     aspectRatio: 'aspect-[1/1]',
     description:
-      'A cohesive shop branding and collateral package for a creative agency, including interior graphics, promotional materials, and client-facing touchpoints that reflect the agency’s innovative approach.',
+      'A studio branding package for a creative business, combining interior graphics, client-facing collateral and applied brand details that make the space feel aligned with the agency’s work.',
     disciplines: ['Interior Graphics', 'Promotional Materials', 'Client Touchpoints', 'Brand Collateral'],
-    printSpecifications: [
-    ],
-    impact: 'Enhanced client experience and brand perception, leading to a 30% increase in client retention and positive feedback on the agency’s physical space.',
+    printSpecifications: ['Interior wall graphics', 'Client collateral', 'Reception branding'],
+    impact: 'Helped create a more memorable studio environment that matches the agency’s creative positioning and client experience.',
   },
   {
     id: 'riverside-legal',
@@ -536,11 +530,10 @@ export const PROJECTS: Project[] = [
     image: LEGAL_IMAGE,
     aspectRatio: 'aspect-[16/10]',
     description:
-      'A professional brand identity and marketing collateral package for a legal services firm, focusing on trust, clarity, and authority in visual communication.',
+      'A professional identity and communication system for a legal practice, with a cleaner visual language and clearer presentation across proposals, letters and office materials.',
     disciplines: ['Brand Positioning', 'Visual Identity', 'Marketing Materials', 'Client Communications'],
-    printSpecifications: [
-    ],
-    impact: 'Increased client inquiries by 40% within the first quarter post-launch; strengthened brand credibility and market positioning in the legal sector.',
+    printSpecifications: ['Letterheads', 'Legal brochures', 'Client-facing stationery'],
+    impact: 'Strengthened the firm’s visual credibility and created a more polished client communication system.',
   },
   {
     id: 'nATURA-BOX',
@@ -551,26 +544,24 @@ export const PROJECTS: Project[] = [
     image: PACKAGES_IMAGE,
     aspectRatio: 'aspect-[16/10]',
     description:
-      'A sustainable packaging design for NATURA, a natural skincare brand, emphasizing eco-friendly materials and minimalist aesthetics to enhance product appeal and environmental responsibility.',
-    disciplines: ['Brand Positioning', 'Visual Identity', 'Marketing Materials', 'Client Communications'],
-    printSpecifications: [
-    ],
-    impact: 'Achieved a 25% reduction in packaging waste and improved customer perception of the brand’s commitment to sustainability, leading to increased sales and positive media coverage.',
+      'A packaging concept for a natural products brand, focused on a cleaner shelf presence and a more premium, eco-conscious presentation without sacrificing practical usability.',
+    disciplines: ['Packaging Design', 'Brand Presentation', 'Retail Ready Graphics', 'Material Guidance'],
+    printSpecifications: ['Product packaging', 'Label systems', 'Shelf-ready presentation'],
+    impact: 'Supported a clearer product story and a more thoughtful presentation aligned with a natural, premium positioning.',
   },
   {
     id: 'Swift-fleet',
     title: 'Swift Fleet',
     client: 'Swift Logistics',
-    category: 'Brand Identity & Marketing Collateral',
+    category: 'Vehicle Branding',
     year: '2024',
     image: FLEET_IMAGE,
     aspectRatio: 'aspect-[16/10]',
     description:
-      'A professional brand identity and marketing collateral package for a logistics company, focusing on reliability, efficiency, and modernity in visual communication.',
-    disciplines: ['Brand Positioning', 'Visual Identity', 'Marketing Materials', 'Client Communications'],
-    printSpecifications: [
-    ],
-    impact: 'Increased client inquiries by 40% within the first quarter post-launch; strengthened brand credibility and market positioning in the logistics sector.',
+      'A fleet and commercial vehicle branding direction for a logistics company, designed to improve recognition on the road while maintaining a clean, professional corporate image.',
+    disciplines: ['Fleet Branding', 'Vehicle Graphics', 'Corporate Identity', 'On-road Visibility'],
+    printSpecifications: ['Vehicle graphics', 'Fleet branding', 'Operational signage'],
+    impact: 'Created a more consistent fleet presence that supports visibility and professional brand recognition in daily operations.',
   },
 ];
 

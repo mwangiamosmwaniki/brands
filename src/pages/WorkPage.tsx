@@ -12,6 +12,22 @@ interface WorkPageProps {
 export const WorkPage: React.FC<WorkPageProps> = ({ onSelectProject }) => {
   return (
     <div className="pt-20 sm:pt-28 min-h-screen">
+      <section className="px-4 pt-8 sm:px-8 lg:px-14">
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <p className="mb-3 text-[10px] font-mono uppercase tracking-[0.25em] text-[#1f7a63] font-semibold">
+              Portfolio
+            </p>
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-7xl text-[#081c2d] leading-[0.95] letter-tight">
+              Branding Portfolio &amp; Case Studies in Nairobi
+            </h1>
+            <p className="mt-4 text-sm sm:text-base leading-relaxed text-[#081c2d]/75">
+              Explore selected branding, signage, packaging, vehicle branding, print and exhibition projects delivered by ShelterBrand for businesses in Nairobi and across Kenya.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio Showcase Grid with Scroll-Triggered Reveal Animations */}
       <SelectedWork onSelectProject={onSelectProject} />
 

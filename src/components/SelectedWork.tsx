@@ -22,25 +22,54 @@ export const SelectedWork: React.FC<SelectedWorkProps> = ({
   const categories = [
     'All',
     'Brand Identity',
+    'Office & Signage',
+    'Vehicle Branding',
     'Packaging',
-    'Campaign',
-    'Corporate Identity',
-    'Print Campaign',
+    'Print & Collateral',
+    'Exhibitions & Events',
   ];
+
+  const matchesCategory = (project: Project, category: string) => {
+    const categoryKey = category.toLowerCase();
+    const projectCategory = project.category.toLowerCase();
+    const projectDisciplines = project.disciplines.join(' ').toLowerCase();
+
+    if (categoryKey === 'brand identity') {
+      return projectCategory.includes('brand identity') || projectCategory.includes('corporate') || projectCategory.includes('shop branding');
+    }
+
+    if (categoryKey === 'office & signage') {
+      return projectCategory.includes('signage') || projectCategory.includes('shop branding') || projectDisciplines.includes('signage') || projectDisciplines.includes('wayfinding');
+    }
+
+    if (categoryKey === 'vehicle branding') {
+      return projectCategory.includes('fleet') || projectDisciplines.includes('fleet wrap') || projectDisciplines.includes('vehicle');
+    }
+
+    if (categoryKey === 'packaging') {
+      return projectCategory.includes('packaging') || projectDisciplines.some((d) => d.toLowerCase().includes('packaging')); 
+    }
+
+    if (categoryKey === 'print & collateral') {
+      return projectCategory.includes('collateral') || projectCategory.includes('marketing') || projectDisciplines.includes('stationery') || projectDisciplines.includes('promotional materials');
+    }
+
+    if (categoryKey === 'exhibitions & events') {
+      return projectCategory.includes('exhibition') || projectCategory.includes('trade show') || projectDisciplines.includes('display');
+    }
+
+    return projectCategory.includes(categoryKey);
+  };
 
   const getCategoryCount = (category: string) => {
     if (category === 'All') return PROJECTS.length;
-    return PROJECTS.filter((p) =>
-      p.category.toLowerCase().includes(category.toLowerCase())
-    ).length;
+    return PROJECTS.filter((p) => matchesCategory(p, category)).length;
   };
 
   const filteredProjects =
     selectedCategory === 'All'
       ? PROJECTS
-      : PROJECTS.filter((p) =>
-          p.category.toLowerCase().includes(selectedCategory.toLowerCase())
-        );
+      : PROJECTS.filter((p) => matchesCategory(p, selectedCategory));
 
   return (
     <section
@@ -171,7 +200,7 @@ export const SelectedWork: React.FC<SelectedWorkProps> = ({
                     {/* Inner Image with Gentle Scroll Zoom-Settle & Hover Zoom */}
                     <motion.img
                       src={project.image}
-                      alt={`${project.title} - ${project.category}`}
+                      alt={`${project.title} ${project.category} project for ${project.client} in Nairobi`}
                       initial={{ scale: 1.08 }}
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
@@ -234,12 +263,16 @@ export const SelectedWork: React.FC<SelectedWorkProps> = ({
                     </div>
                   </div>
 
+                  <p className="mt-3 text-sm leading-relaxed text-[#081c2d]/70">
+                    {project.description}
+                  </p>
+
                   {/* Discipline Tags Preview */}
                   {project.disciplines && project.disciplines.length > 0 && (
-                    <div className="flex flex-wrap items-center gap-1.5 pt-1">
-                      {project.disciplines.slice(0, 3).map((disc, dIdx) => (
+                    <div className="flex flex-wrap items-center gap-1.5 pt-3">
+                      {project.disciplines.slice(0, 3).map((disc) => (
                         <span
-                          key={dIdx}
+                          key={`${project.id}-${disc}`}
                           className="px-2.5 py-0.5 rounded-full bg-[#081c2d]/5 text-[10px] font-mono text-[#081c2d]/70 tracking-wide"
                         >
                           {disc}
