@@ -76,7 +76,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({
                 </div>
                 <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-[10px] font-mono uppercase tracking-widest">
                   <Sparkles className="w-3.5 h-3.5 text-[#1f7a63]" />
-                  Verified Production
+                  Production Ready
                 </span>
               </div>
             </div>

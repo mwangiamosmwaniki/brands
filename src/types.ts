@@ -1,15 +1,20 @@
 export interface Project {
   id: string;
+  slug: string;
   title: string;
   client: string;
+  industry: string;
   category: string;
   year: string;
   image: string;
   aspectRatio: string;
   description: string;
+  challenge: string;
+  services: string[];
   disciplines: string[];
   printSpecifications: string[];
   impact: string;
+  result: string;
 }
 
 export interface Service {

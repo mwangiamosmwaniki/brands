@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { PROJECTS } from '../data/studioData';
 import { buildBusinessSchema, getCanonicalUrl, routeMeta, SITE_CONFIG } from '../seo/siteConfig';
 
 const DEFAULT_TITLE = SITE_CONFIG.title;
@@ -8,7 +9,18 @@ export const Seo: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const meta = routeMeta[location.pathname] || routeMeta['/'];
+    const pathname = location.pathname;
+    const workSlug = pathname.startsWith('/work/') ? pathname.replace('/work/', '') : null;
+    const project = workSlug ? PROJECTS.find((item) => item.slug === workSlug) : null;
+
+    const meta = project
+      ? {
+          title: `${project.title} | Case Study | ShelterBrand`,
+          description: `${project.client} ${project.category.toLowerCase()} project in ${project.industry}. ${project.description}`,
+          type: 'website',
+        }
+      : routeMeta[pathname] || routeMeta['/work'] || routeMeta['/'];
+
     document.title = meta.title || DEFAULT_TITLE;
 
     const setMeta = (selector: string, value: string, attribute = 'content') => {
@@ -41,7 +53,7 @@ export const Seo: React.FC = () => {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = getCanonicalUrl(location.pathname);
+    canonical.href = getCanonicalUrl(pathname);
 
     let script = document.head.querySelector('#shelterbrand-business-schema');
     if (script) {

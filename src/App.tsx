@@ -12,6 +12,7 @@ import { Project } from './types';
 // Distinct Pages
 import { HomePage } from './pages/HomePage';
 import { WorkPage } from './pages/WorkPage';
+import { WorkDetailPage } from './pages/WorkDetailPage';
 import { ServicesPage } from './pages/ServicesPage';
 import { AboutPage } from './pages/AboutPage';
 import { WhyUsPage } from './pages/WhyUsPage';
@@ -43,6 +44,7 @@ const AnimatedRoutes: React.FC<AnimatedRoutesProps> = ({ onSelectProject }) => {
             path="/work"
             element={<WorkPage onSelectProject={onSelectProject} />}
           />
+          <Route path="/work/:slug" element={<WorkDetailPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route
@@ -67,6 +69,7 @@ const AnimatedRoutes: React.FC<AnimatedRoutesProps> = ({ onSelectProject }) => {
 
 export default function App() {
   const [activeCaseStudy, setActiveCaseStudy] = useState<Project | null>(null);
+  const location = useLocation();
 
   const handleSelectProject = (project: Project) => {
     setActiveCaseStudy(project);
@@ -95,10 +98,12 @@ export default function App() {
         <Footer />
 
         {/* Case Study Detail Modal (Accessible from portfolio pages) */}
-        <CaseStudyModal
-          project={activeCaseStudy}
-          onClose={handleCloseCaseStudy}
-        />
+        {!location.pathname.startsWith('/work/') && (
+          <CaseStudyModal
+            project={activeCaseStudy}
+            onClose={handleCloseCaseStudy}
+          />
+        )}
       </div>
     </Router>
   );

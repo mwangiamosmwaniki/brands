@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { ArrowUpRight, Sparkles, Filter, Layers } from 'lucide-react';
 import { PROJECTS } from '../data/studioData';
 import { Project } from '../types';
@@ -177,9 +178,13 @@ export const SelectedWork: React.FC<SelectedWorkProps> = ({
                     delay: columnStaggerDelay,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className={`${colSpan} group cursor-pointer flex flex-col justify-between`}
-                  onClick={() => onSelectProject(project)}
+                  className={`${colSpan} group flex flex-col justify-between`}
                 >
+                  <Link
+                    to={`/work/${project.slug}`}
+                    className="block"
+                    aria-label={`Open the ${project.title} case study`}
+                  >
                   {/* Image Container with Scroll Curtain & Settle Reveal */}
                   <div
                     className={`relative w-full ${project.aspectRatio} rounded-[28px] sm:rounded-[32px] overflow-hidden bg-[#081c2d] border border-[#081c2d]/10 shadow-[0_10px_30px_rgba(8,28,45,0.06)] group-hover:shadow-[0_24px_54px_rgba(8,28,45,0.16)] transition-all duration-500`}
@@ -280,6 +285,7 @@ export const SelectedWork: React.FC<SelectedWorkProps> = ({
                       ))}
                     </div>
                   )}
+                  </Link>
                 </motion.article>
               );
             })}
