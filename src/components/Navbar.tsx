@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, ArrowUpRight, Mail, Phone, Compass } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { STUDIO_DETAILS } from '../data/studioData';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/Logo.png';
 
 export type BackgroundTone = 'light' | 'dark' | 'emerald';
 
