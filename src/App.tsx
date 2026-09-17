@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { CaseStudyModal } from './components/CaseStudyModal';
+import { Seo } from './components/Seo';
 import { Project } from './types';
 
 // Distinct Pages
@@ -68,6 +69,7 @@ export default function App() {
 
   return (
     <Router>
+      <Seo />
       <div className="min-h-screen bg-[#f5f7fa] text-[#081c2d] font-sans selection:bg-[#1f7a63] selection:text-[#f5f7fa] relative flex flex-col justify-between">
         {/* Scroll To Top on Route Changes */}
         <ScrollToTop />
