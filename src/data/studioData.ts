@@ -113,10 +113,10 @@ export const STUDIO_DETAILS = {
     },
   ],
   headline: 'We build brands people remember.',
-  subheadline: 'ShelterBrand is a Nairobi creative studio shaping bold identities, powerful visuals, and tangible brand experiences for ambitious businesses.',
+  subheadline: 'ShelterBrand is a Nairobi branding and print production company helping businesses create consistent identities, signage and physical brand experiences.',
   manifestoHeading: 'Good design gets attention. Great brands stay with you.',
   manifestoBody:
-    'We believe great brands aren’t just seen on screens—they are felt in everyday life. In a world full of fast, forgettable content, people remember things that feel real, thoughtful, and well-made. At ShelterBrand, we bring together smart design thinking with genuine hands-on craftsmanship. From our studio and workshop in Westlands, Nairobi, we help ambitious businesses build distinct visual identities, packaging, and print work that connect warmly with people here at home and anywhere in the world.',
+    'We believe great brands aren’t just seen on screens—they are felt in everyday life. In a world full of fast, forgettable content, people remember things that feel real, thoughtful, and well-made. At ShelterBrand, we combine brand strategy, design and production under one roof. From our studio and workshop in Ngara, Nairobi, we help ambitious businesses build distinct visual identities, packaging, signage and print work that connect warmly with people here at home and anywhere in the world.',
   brandStatement: 'From the first sketch to the final print.',
   statementSub:
     'Most agencies design on a computer and leave the printing to an unknown third party. We do both together under one roof. Our designers and printmakers collaborate every day so the colors match, the materials feel right, and what you see on screen turns out even better in your hands.',

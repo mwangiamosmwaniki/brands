@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { CaseStudyModal } from './components/CaseStudyModal';
+import { Process } from './components/Process';
 import { Seo } from './components/Seo';
 import { Project } from './types';
 
@@ -44,7 +45,15 @@ const AnimatedRoutes: React.FC<AnimatedRoutesProps> = ({ onSelectProject }) => {
           />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/process" element={<Navigate to="/services" replace />} />
+          <Route
+            path="/process"
+            element={
+              <Process
+                sectionNumber="04 / Branding Process"
+                subtitle="How ShelterBrand works"
+              />
+            }
+          />
           <Route path="/why" element={<Navigate to="/about" replace />} />
           <Route path="/contact" element={<ContactPage />} />
 

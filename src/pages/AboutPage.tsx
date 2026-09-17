@@ -209,7 +209,7 @@ export const AboutPage: React.FC = () => {
               Want to see our work in person?
             </h4>
             <p className="text-xs sm:text-sm text-[#9aa3a8]/90 font-sans leading-relaxed">
-              Drop by our Westlands studio to flip through paper swatches, see our printers in action, and chat about your project over a cup of coffee. Or if you prefer, we can send a curated sample box straight to your desk.
+              Drop by our Ngara studio to flip through paper swatches, see our printers in action, and chat about your project over a cup of coffee. Or if you prefer, we can send a curated sample box straight to your desk.
             </p>
           </div>
 

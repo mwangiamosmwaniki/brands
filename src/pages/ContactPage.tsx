@@ -124,8 +124,11 @@ export const ContactPage: React.FC = () => {
                 <span className="text-xs font-mono text-[#9aa3a8]">· Nairobi Atelier</span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-serif font-bold tracking-tight text-[#081c2d] leading-[1.1] max-w-2xl">
-                Join Us in Creating Something Great
+                Contact ShelterBrand for Branding &amp; Print Services in Nairobi
               </h1>
+              <p className="mt-4 max-w-xl text-sm sm:text-base leading-relaxed text-[#081c2d]/75">
+                Looking for branding, signage, print production or physical brand installations in Nairobi? Contact ShelterBrand to discuss your project, request a quotation or arrange a studio visit.
+              </p>
             </div>
 
             {/* Overlapping Badge Component with Brand Colors (Emerald & Obsidian) */}
